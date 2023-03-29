@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+    transition: all 0.5s;
+
+    &:hover {
+        filter: brightness(185%);
+    }
+
+    &:active {
+        filter: brightness(200%);
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
+}

@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+a:hover {
+  filter: brightness(185%);
+}
+a:active {
+  filter: brightness(200%);
+  position: relative;
+  top: 2px;
+  left: 2px;
+}/*# sourceMappingURL=styles.css.map */
