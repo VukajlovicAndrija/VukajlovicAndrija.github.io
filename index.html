@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrija Vukajlović</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container border">
+            <div class="row">
+                <div class="col-sm-10">
+                    <h1 class="display-1">Andrija Vukajlović</h1>
+                    <p class="lead">Front End and Web UI developer</p>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item"><button type="button" id="btnSwitch"
+                                class="btn btn-outline-dark">🌙/🌞</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+    </main>
+
+
+
+
+
+
+    <script>
+        document.getElementById('btnSwitch').addEventListener('click', () => {
+            if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+                document.documentElement.setAttribute('data-bs-theme', 'light')
+            }
+            else {
+                document.documentElement.setAttribute('data-bs-theme', 'dark')
+            }
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
