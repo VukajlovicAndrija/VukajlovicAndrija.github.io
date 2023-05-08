@@ -1,13 +1,49 @@
-a {
-  text-decoration: none;
-  transition: all 0.5s;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
 }
-a:hover {
-  filter: brightness(185%);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #5a189a;
 }
-a:active {
-  filter: brightness(200%);
-  position: relative;
-  top: 2px;
-  left: 2px;
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 6rem;
+}
+
+.hero-p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5a189a;
+}
+
+.under {
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #ffd6ff, #c8b6ff, #bbd0ff, #b8c0ff);
+  background-size: 240% 240%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }/*# sourceMappingURL=styles.css.map */
