@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
+$PRIMARY-COLOR: #8ECAE6;
+$SECONDARY-COLOR: #219EBC;
+$H-TEXT: #023047;
+$ALT-COLOR: #FFB703;
+$SECOND-ALT: #FB8500;
+
+
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     height: 100vh;
+    background-color: whitesmoke;
 }
 
 h1,
@@ -12,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #5a189a;
+    color: $H-TEXT;
 }
 
 h1 {
@@ -24,7 +34,7 @@ h1 {
 .hero-p {
     font-size: 2rem;
     font-weight: bold;
-    color: #5a189a;
+    color: $H-TEXT;
 }
 
 .under {
@@ -40,7 +50,7 @@ h1 {
 
 
 .gradient-background {
-    background: linear-gradient(300deg, #ffd6ff, #c8b6ff, #bbd0ff, #b8c0ff);
+    background: linear-gradient(119deg, $SECOND-ALT, $SECONDARY-COLOR, $ALT-COLOR, $SECONDARY-COLOR);
     background-size: 240% 240%;
     animation: gradient-animation 12s ease infinite;
 }
