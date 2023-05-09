@@ -31,6 +31,23 @@ h1 {
   white-space: nowrap;
 }
 
+.footer-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-list li {
+  padding: 2rem;
+  margin: 2rem;
+}
+.footer-list li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
 .gradient-background {
   background: linear-gradient(119deg, #FB8500, #219EBC, #FFB703, #219EBC);
   background-size: 240% 240%;
